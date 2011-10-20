@@ -1,9 +1,9 @@
 Build
 ------------
 You can either build with Maven or Gradle
-0. First you will need a key for the API: http://fwix.com/account/register and then you need to replace the value in the following file: ```src/main/resources/auth.properties```
-1. Maven: mvn install
-2. Gradle: gradle build
+1. First you will need a key for the API: http://fwix.com/account/register and then you need to replace the value in the following file: ```src/main/resources/auth.properties```
+2. Maven: mvn install
+3. Gradle: gradle build
 
 Run
 -----
@@ -12,7 +12,6 @@ You can check the integration test in the src/test/java package (FwixClientInteg
 
 Work around Spring (if you really need!)
 -------------
-
 
 Or use the client directly. See the class FwixAPIWrapperImpl (note that this example uses Spring), so if you want to use this in your app, you'll need to load the
 ```fwixContext.xml``` and wire the bean ```fwixAPIWrapper``` (the astute reader will notice that there's no explicit Spring definition for it. it's because we're using "component scanning").
